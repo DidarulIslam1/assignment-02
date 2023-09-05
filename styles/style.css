@@ -18,7 +18,37 @@
     font-weight: 500;
 }
 
+.cursor {
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 21px 40px;
+    border: none;
+    border-radius: 48px;
+    background-color: #FF42A5;
+
+}
+
+.btn-secondary {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 21px 40px;
+    border: none;
+    border-radius: 48px;
+    background-color: #4EC5F7;
+}
+
+/* -------------------------------------------------------------------------- */
 /* nav styles */
+header {
+    margin-bottom: 70px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -50,6 +80,15 @@ nav li {
 .website-name {
     font-size: 2.8rem;
     font-weight: 700;
+
+}
+
+.first-letter {
+    /* color: #FF42A5; */
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-tabs {
@@ -74,6 +113,45 @@ img {
     background-color: transparent;
 }
 
+/* -------------------------------------------------------------------- */
+
+/* banner section styles */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.banner-text-side h3,
+h1,
+p,
+button {
+    margin-bottom: 10px;
+}
+
+section h3 {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section p {
+    color: #534C64;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
 
 /* Responsive media query  */
 /* for mobile devise */
@@ -85,25 +163,60 @@ img {
         margin: 0;
     }
 
+    .nav-tabs {
+        padding-top: 20px;
+    }
 
     .website-logo {
         margin: 0;
     }
+
+    /* banner responsive */
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-text-side {
+        width: 100%;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
 }
 
 /* for tablet device */
 @media screen and (min-width: 576px) and (max-width: 768px) {
 
-    nav {
+    nav,
+    .nav-tabs {
+        flex-direction: column;
         margin: 0;
     }
 
+    .nav-tabs {
+        padding-top: 20px;
+    }
+
     .website-logo {
-        margin-left: 5px;
-        margin-right: 5px;
-        flex-direction: row;
+        margin: 0;
+    }
+
+    /* banner responsive */
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-text-side {
+        width: 100%;
         text-align: center;
     }
+
+    .banner img {
+        width: 100%;
+    }
+
 }
 
 /* for laptop device */
@@ -118,4 +231,16 @@ img {
         flex-direction: row;
         text-align: center;
     }
+
+    /* ------------------------------ */
+    /* banner responsive */
+    .banner-text-side {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
 }
