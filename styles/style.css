@@ -9,13 +9,17 @@
 
 * {
     margin: 5px 5px;
-    background: #FFF;
 }
 
-.nav-text {
+.general-text {
     color: #3C354F;
     font-size: 1.15rem;
     font-weight: 500;
+}
+
+.heading-text {
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .cursor {
@@ -43,11 +47,7 @@
     background-color: #4EC5F7;
 }
 
-/* -------------------------------------------------------------------------- */
-/* nav styles */
-header {
-    margin-bottom: 70px;
-}
+/* ---------------------------------- */
 
 nav {
     display: flex;
@@ -77,14 +77,7 @@ nav li {
     height: 40px;
 }
 
-.website-name {
-    font-size: 2.8rem;
-    font-weight: 700;
-
-}
-
 .first-letter {
-    /* color: #FF42A5; */
     background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
     background-clip: text;
     -webkit-background-clip: text;
@@ -113,7 +106,7 @@ img {
     background-color: transparent;
 }
 
-/* -------------------------------------------------------------------- */
+/* --------------------------------- */
 
 /* banner section styles */
 .banner {
@@ -153,6 +146,110 @@ section p {
     font-weight: 500;
 }
 
+/* --------------------------------*/
+.online-game {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+
+/* -------------------------------- */
+
+/* play instantly section styles */
+.play-instantly-main {
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-instantly-sub-img img {
+    width: 30%;
+    position: relative;
+    bottom: 120px;
+    right: 100px;
+}
+
+/* ------------------------------ */
+
+/* game chose section styles */
+.game-section {
+    margin-bottom: 80px;
+}
+
+.common-first {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    justify-self: center;
+}
+
+.common {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.common:hover {
+    border: 1.5px solid #FF42A5;
+    border-radius: 50px;
+}
+
+.common-p:hover {
+    color: #FF42A5;
+}
+
+.game-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* footer section styles */
+footer {
+    background: #0B0223;
+}
+
+.footer-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-heading-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.footer-p {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.color {
+    color: #FFF;
+}
+
+.footer-icons {
+    text-align: center;
+}
+
+.footer-p2 {
+    text-align: center;
+}
+
+.footer-p3 {
+    text-align: center;
+}
+
+/* --------------------------- */
+
+
 /* Responsive media query  */
 /* for mobile devise */
 @media screen and (max-width: 576px) {
@@ -172,7 +269,8 @@ section p {
     }
 
     /* banner responsive */
-    .banner {
+    .banner,
+    .play-instantly-main {
         flex-direction: column;
     }
 
@@ -184,8 +282,35 @@ section p {
         width: 100%;
     }
 
+    .online-game {
+        flex-direction: column;
+    }
+
+    /* play instant responsive */
+    .play-instantly-main img {
+        width: 100%;
+    }
+
+    .play-instantly-sub-img img {
+        width: 40%;
+        position: relative;
+        bottom: 100px;
+        right: 30px;
+    }
+
+    /* game chose responsive */
+    .common-first {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-p {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
+/* ----------------------------- */
 /* for tablet device */
 @media screen and (min-width: 576px) and (max-width: 768px) {
 
@@ -217,8 +342,36 @@ section p {
         width: 100%;
     }
 
+    .online-game {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* play instantly responsive */
+    .play-instantly-main {
+        flex-direction: column;
+    }
+
+    .play-instantly-text {
+        margin-bottom: 0;
+        height: 0;
+    }
+
+    .play-instantly-sub-img img {
+        width: 10%;
+        position: relative;
+        bottom: 100px;
+        right: 30px;
+    }
+
+    /* game section responsive */
+    .common-first {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
+/* ---------------------------*/
 /* for laptop device */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     nav {
@@ -241,6 +394,39 @@ section p {
 
     .banner img {
         width: 100%;
+        margin-bottom: 50px;
     }
 
+    /* ------------------------------- */
+    /* online game section */
+    .online-game img {
+        width: 80%;
+    }
+
+    .online-game {
+        width: 100%;
+    }
+
+    /* ---------------------------- */
+    /* play instantly responsive */
+    .play-instantly-main {
+        width: 100%;
+        margin: auto;
+    }
+
+    .play-instantly-img img {
+        width: 100%;
+    }
+
+    .play-instantly-text {
+        width: 60%;
+        text-align: center;
+    }
+
+    .play-instantly-sub-img img {
+        width: 40%;
+        position: relative;
+        bottom: 120px;
+        right: 80px;
+    }
 }
