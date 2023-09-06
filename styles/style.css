@@ -214,19 +214,21 @@ section p {
 /* game chose section styles */
 .game-section {
     margin-bottom: 80px;
-}
-
-.common-first {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
-    justify-self: center;
+    text-align: center;
+    justify-items: center;
 }
 
 .common {
     display: flex;
     align-items: center;
-    width: 100%;
+    padding: 2px;
+}
+
+.common img {
+    width: 20%;
 }
 
 .common:hover {
@@ -264,7 +266,7 @@ footer {
 .footer-p {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .color {
@@ -344,6 +346,19 @@ footer {
         top: 150px;
         left: -60px;
     }
+
+    .game-section {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .footer-p {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 
@@ -399,6 +414,19 @@ footer {
         top: 160px;
         left: -60px;
     }
+
+    .game-section {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .footer-p {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 /* ----------------------------------------------------------- */
@@ -412,5 +440,10 @@ footer {
 
     .play-instantly-main div {
         width: 100%;
+    }
+
+    .game-section {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
     }
 }
