@@ -48,14 +48,9 @@ section {
     background-color: #4EC5F7;
 }
 
-/* ----------------------------------------------------- */
+/* --------------------- */
 
-
-
-
-
-/* ----------------------------------------------------- */
-
+/* header section styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -99,7 +94,6 @@ nav li {
 
 .follow-us {
     display: flex;
-    /* width: 150px; */
     width: 9.5rem;
     padding: 5px 5px;
     justify-content: space-between;
@@ -107,14 +101,7 @@ nav li {
     background: rgba(11, 2, 35, 0.10);
 }
 
-/* ------------------------------------------------------- */
-
-
-
-
-
-
-/* -------------------------------------------------------- */
+/* --------------------- */
 
 /* banner section styles */
 .banner {
@@ -172,8 +159,9 @@ section p {
     gap: 10px;
 }
 
-/* ----------------------------------------------------------------------*/
+/* ---------------------------*/
 
+/* online games section styles */
 .online-game-section {
     text-align: center;
     padding-left: 50px;
@@ -253,7 +241,9 @@ section p {
     color: #ff42a5;
 }
 
-/* ------------------------------------------------------------------- */
+/* ----------------------------- */
+
+/* play instantly section styles */
 .play-instantly-section {
     display: flex;
     justify-content: space-between;
@@ -269,7 +259,6 @@ section p {
 
 .play-instantly-texts {
     text-align: center;
-    /* max-width: 370px; */
 }
 
 .instantly-img-div {
@@ -289,12 +278,8 @@ section p {
     left: -40px;
 }
 
-/* ------------------------------------------------------------------- */
+/* ------------------------- */
 
-
-
-
-/* ------------------------------------------------------------------- */
 /* game chose section styles */
 .game-section {
     margin-bottom: 80px;
@@ -331,6 +316,8 @@ section p {
     font-size: 1.25rem;
     font-weight: 600;
 }
+
+/* ---------------------- */
 
 /* footer section styles */
 footer {
@@ -377,22 +364,17 @@ footer {
     text-align: center;
 }
 
-/* ------------------------------------------------------------- */
+/* ----------------------- */
 
 .hide {
     display: none;
 }
 
+/* ----------------------- */
 
-
-
-
-
-
-/* ------------------------------------------------------------- */
 /* Responsive media query  */
-/* for mobile devise */
 
+/* for mobile screens */
 @media screen and (max-width: 425px) {
 
     nav,
@@ -455,14 +437,9 @@ footer {
     }
 }
 
+/* ----------------- */
 
-
-
-/* ----------------------------------------------------------- */
-
-
-
-
+/* for tablet screens */
 @media screen and (min-width: 425px) and (max-width: 768px) {
 
     nav,
@@ -520,8 +497,8 @@ footer {
     }
 }
 
-/* ----------------------------------------------------------- */
-
+/* ------------------ */
+/* for laptop screens */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
     nav,
