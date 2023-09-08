@@ -284,12 +284,18 @@ section p {
 .game-section {
     margin-bottom: 80px;
     margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
-    text-align: center;
+    text-align: start;
     justify-items: center;
     align-items: center;
+}
+
+.game-section>div {
+    width: 100%;
 }
 
 .common {
@@ -300,7 +306,7 @@ section p {
 }
 
 .common img {
-    width: 20%;
+    width: 30px;
 }
 
 .common:hover {
